@@ -1,0 +1,12 @@
+{
+  "title": "examination_diagnose.v1",
+  "type": "object",
+  "properties": {
+    "main": {
+      "type": "string"
+    },
+    "": {
+      "type": "string"
+    }
+  }
+}

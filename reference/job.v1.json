@@ -1,0 +1,202 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "job",
+    "version": "1.0"
+  },
+  "servers": [
+    {
+      "url": "v1/job/"
+    },
+    {
+      "description": "",
+      "url": "v1/jobs"
+    }
+  ],
+  "paths": {
+    "/job/{id}": {
+      "parameters": [
+        {
+          "schema": {
+            "type": "string"
+          },
+          "name": "id",
+          "in": "path",
+          "required": true
+        }
+      ],
+      "put": {
+        "summary": "Update job",
+        "tags": [],
+        "responses": {},
+        "operationId": "put-job-id"
+      },
+      "get": {
+        "summary": "Get jobs",
+        "tags": [],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": {
+                      "type": "string"
+                    },
+                    "code": {
+                      "type": "string"
+                    },
+                    "data": {
+                      "$ref": "../models/job.v1.json"
+                    },
+                    "message": {
+                      "type": "string"
+                    },
+                    "": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "examples": {
+                  "example-1": {}
+                }
+              }
+            }
+          }
+        },
+        "operationId": "get-job-id",
+        "security": [
+          {
+            "Authorization": []
+          }
+        ]
+      },
+      "post": {
+        "summary": "Insert job",
+        "tags": [],
+        "responses": {},
+        "operationId": "post-job-id"
+      },
+      "delete": {
+        "summary": "Delete job",
+        "tags": [],
+        "responses": {},
+        "operationId": "delete-job-id"
+      }
+    },
+    "/jobs": {
+      "get": {
+        "summary": "Your GET endpoint",
+        "tags": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "operationId": "get-jobs",
+        "description": "Search jobs by date range\n",
+        "security": [
+          {
+            "Authorization": []
+          }
+        ],
+        "requestBody": {}
+      }
+    },
+    "/job": {
+      "post": {
+        "summary": "",
+        "operationId": "post-job",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": {
+                      "type": "string"
+                    },
+                    "code": {
+                      "type": "string"
+                    },
+                    "mesage": {
+                      "type": "string"
+                    },
+                    "data": {
+                      "$ref": "../models/job.v1.json"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "time": {
+                    "type": "string"
+                  },
+                  "content": {
+                    "type": "string"
+                  },
+                  "flag": {
+                    "type": "integer"
+                  },
+                  "": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Authorization": []
+          }
+        ]
+      },
+      "get": {
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "time": {
+                    "type": "string"
+                  },
+                  "content": {
+                    "type": "string"
+                  },
+                  "flag": {
+                    "type": "integer"
+                  },
+                  "": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "Authorization": {
+        "type": "http",
+        "scheme": "bearer"
+      }
+    }
+  }
+}

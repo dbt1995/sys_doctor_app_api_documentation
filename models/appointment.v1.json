@@ -1,0 +1,46 @@
+{
+  "title": "appointment",
+  "type": "object",
+  "properties": {
+    "code": {
+      "type": "string"
+    },
+    "status": {
+      "type": "integer"
+    },
+    "patient": {
+      "$ref": "./patient.v1.json"
+    },
+    "doctor": {
+      "$ref": "./account.v1.json"
+    },
+    "exam_date": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string"
+    },
+    "note": {
+      "type": "string"
+    },
+    "state_re_exam": {
+      "type": "integer"
+    },
+    "initial_diagnose": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "string"
+    },
+    "updated_at": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "description": "[\"APPOINTMENT\",\"EXAMINATION\"]"
+    },
+    "": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "title": "job",
+  "type": "object",
+  "description": "",
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "code": {
+      "type": "string"
+    },
+    "account": {
+      "$ref": "./account.v1.json"
+    },
+    "status": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string"
+    },
+    "content": {
+      "type": "string"
+    },
+    "flag": {
+      "type": "string"
+    },
+    "s_date": {
+      "type": "string"
+    },
+    "s_time": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "string"
+    },
+    "updated_at": {
+      "type": "string"
+    },
+    "": {
+      "type": "string"
+    }
+  }
+}

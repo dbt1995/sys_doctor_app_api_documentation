@@ -1,0 +1,15 @@
+{
+  "title": "examination_note.v1",
+  "type": "object",
+  "properties": {
+    "time": {
+      "type": "string"
+    },
+    "content": {
+      "type": "string"
+    },
+    "": {
+      "type": "string"
+    }
+  }
+}

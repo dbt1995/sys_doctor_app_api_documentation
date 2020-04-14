@@ -1,0 +1,33 @@
+{
+  "title": "note.v1",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "account": {
+      "$ref": "./account.v1.json"
+    },
+    "status": {
+      "type": "integer"
+    },
+    "state": {
+      "type": "integer"
+    },
+    "flag": {
+      "type": "integer"
+    },
+    "content": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "string"
+    },
+    "updated_at": {
+      "type": "string"
+    },
+    "": {
+      "type": "string"
+    }
+  }
+}

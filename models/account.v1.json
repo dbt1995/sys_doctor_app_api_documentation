@@ -1,0 +1,61 @@
+{
+  "title": "account.v1",
+  "type": "object",
+  "description": "This model is to model the account table row",
+  "x-examples": {
+    "example-1": {}
+  },
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "status": {
+      "type": "integer"
+    },
+    "state": {
+      "type": "integer"
+    },
+    "code": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "type": {
+      "type": "integer"
+    },
+    "role": {
+      "type": "integer"
+    },
+    "username": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "string"
+    },
+    "updated_at": {
+      "type": "string"
+    },
+    "Thi": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "code",
+    "name",
+    "type",
+    "role",
+    "username",
+    "email",
+    "phone",
+    "updated_at",
+    "Thi"
+  ]
+}

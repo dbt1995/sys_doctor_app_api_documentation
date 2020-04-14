@@ -1,0 +1,9 @@
+{
+  "title": "initial_diagnose.v1",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    }
+  }
+}

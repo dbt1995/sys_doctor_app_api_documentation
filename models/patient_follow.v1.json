@@ -1,0 +1,33 @@
+{
+  "title": "patient_follow",
+  "type": "object",
+  "properties": {
+    "code": {
+      "type": "string"
+    },
+    "patient": {
+      "$ref": "./patient.v1.json"
+    },
+    "doctor": {
+      "$ref": "./account.v1.json"
+    },
+    "examination": {
+      "$ref": "./examination.v1.json"
+    },
+    "status": {
+      "type": "integer"
+    },
+    "times_flag": {
+      "type": "integer"
+    },
+    "created_at": {
+      "type": "string"
+    },
+    "updated_at": {
+      "type": "string"
+    },
+    "": {
+      "type": "string"
+    }
+  }
+}

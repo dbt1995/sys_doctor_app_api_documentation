@@ -1,0 +1,63 @@
+{
+  "title": "paitnet.v1",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "account": {
+      "$ref": "./account.v1.json"
+    },
+    "code": {
+      "type": "string"
+    },
+    "status": {
+      "type": "integer"
+    },
+    "state": {
+      "type": "integer"
+    },
+    "name": {
+      "type": "string"
+    },
+    "image_thumb": {
+      "type": "string"
+    },
+    "image_url": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "phone_support": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "note": {
+      "type": "string"
+    },
+    "year_birth": {
+      "type": "string"
+    },
+    "job_name": {
+      "type": "string"
+    },
+    "gender": {
+      "type": "integer"
+    },
+    "created_at": {
+      "type": "string"
+    },
+    "updated_at": {
+      "type": "string"
+    },
+    "": {
+      "type": "string"
+    }
+  }
+}

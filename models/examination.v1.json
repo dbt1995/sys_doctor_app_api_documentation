@@ -1,0 +1,78 @@
+{
+  "title": "examination.v1",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "doctor": {
+      "$ref": "./account.v1.json"
+    },
+    "patient": {
+      "$ref": "./patient.v1.json"
+    },
+    "status": {
+      "type": "integer"
+    },
+    "state": {
+      "type": "integer"
+    },
+    "code": {
+      "type": "integer"
+    },
+    "image_url": {
+      "type": "string"
+    },
+    "list_image": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "file_url": {
+      "type": "string"
+    },
+    "list_file": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "created_at": {
+      "type": "string"
+    },
+    "updated_at": {
+      "type": "string"
+    },
+    "exam_date": {
+      "type": "string"
+    },
+    "re_exam_date": {
+      "type": "string"
+    },
+    "reason": {
+      "type": "string"
+    },
+    "pathological_process": {
+      "type": "string"
+    },
+    "overview": {
+      "type": "string"
+    },
+    "note": {
+      "type": "array",
+      "items": {
+        "$ref": "./examination_note.v1.json"
+      }
+    },
+    "diagnose": {
+      "$ref": "./examination_diagnose.v1.json"
+    },
+    "state_re_exam": {
+      "type": "string"
+    },
+    "": {
+      "type": "string"
+    }
+  }
+}
