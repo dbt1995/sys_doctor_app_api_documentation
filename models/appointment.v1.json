@@ -35,10 +35,6 @@
     "updated_at": {
       "type": "string"
     },
-    "type": {
-      "type": "string",
-      "description": "[\"APPOINTMENT\",\"EXAMINATION\"]"
-    },
     "": {
       "type": "string"
     }

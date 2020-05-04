@@ -110,9 +110,9 @@
           "required": true
         }
       ],
-      "get": {
-        "summary": "Your GET endpoint",
-        "tags": [],
+      "post": {
+        "summary": "",
+        "operationId": "post-examination-patient_id",
         "responses": {
           "200": {
             "description": "OK",
@@ -142,7 +142,15 @@
             }
           }
         },
-        "operationId": "get-examination-patient_id",
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "header",
+            "name": "Authorization"
+          }
+        ],
         "security": [
           {
             "Authorization": []
@@ -154,31 +162,31 @@
               "schema": {
                 "type": "object",
                 "properties": {
-                  "reason": {
-                    "type": "string"
-                  },
-                  "overview": {
-                    "type": "string"
-                  },
-                  "clinical_process": {
-                    "type": "string"
-                  },
-                  "diagnose": {
-                    "type": "string"
-                  },
-                  "note": {
-                    "type": "string"
-                  },
-                  "date": {
-                    "type": "string"
-                  },
-                  "re_exam_date": {
+                  "": {
                     "type": "string"
                   },
                   "image": {
                     "type": "string"
                   },
-                  "": {
+                  "re_exam_date": {
+                    "type": "string"
+                  },
+                  "date": {
+                    "type": "string"
+                  },
+                  "note": {
+                    "type": "string"
+                  },
+                  "diagnose": {
+                    "type": "string"
+                  },
+                  "clinical_process": {
+                    "type": "string"
+                  },
+                  "overview": {
+                    "type": "string"
+                  },
+                  "reason": {
                     "type": "string"
                   }
                 }
